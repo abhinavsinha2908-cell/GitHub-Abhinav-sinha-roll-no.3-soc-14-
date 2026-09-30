@@ -1,0 +1,542 @@
+1. Program to Demonstrate Basic I/O Functions Using Different Data Types
+
+#include <stdio.h>
+
+int main()
+
+{
+
+}
+
+int age;
+
+float height;
+
+double salary;
+
+char grade;
+
+printf("Enter age: ");
+
+scanf("%d", &age);
+
+printf("Enter height: ");
+
+scanf("%f", &height);
+
+printf("Enter salary: ");
+
+scanf("%lf", &salary);
+
+printf("Enter grade: ");
+
+scanf("%c", &grade);
+
+printf("\n--- Details ---\n");
+
+printf("Age = %d\n", age);
+
+printf("Height = %.2f\n", height);
+
+printf("Salary = %.21f\n", salary);
+
+printf("Grade = %c\n", grade);
+
+return 0;
+
+2. Program to Calculate the Area of a Circle
+
+#include <stdio.h>
+
+int main()
+
+{
+
+}
+
+float radius, area;
+
+const float PI = 3.14159;
+
+printf("Enter radius of circle: ");
+
+scanf("%f", &radius);
+
+area PI radius radius;
+
+printf("Area of circle = %.2f\n", area);
+
+return 0;
+
+3. Program to Calculate the Average of Three Numbers
+
+#include <stdio.h>
+
+int main()
+
+{
+
+2/4
+
+float a, b, c, average;
+
+printf("Enter three numbers: ");
+
+scanf("%f %f %f", &a, &b, &c);
+
+average = (a+b+c)/3;
+
+printf("Average = %.2f\n", average);
+
+}
+
+return 0;
+
+4. Program to Swap Two Numbers Using a Temporary Variable
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int a, b, temp;
+
+printf("Enter two numbers: ");
+
+scanf("%d %d", &a, &b);
+
+printf("Before swapping: a = %d, b = %d\n", a, b);
+
+temp = a;
+
+a = b;
+
+b = temp;
+
+printf("After swapping: a = %d, b = %d\n", a, b);
+
+return 0;
+
+}
+
+5. Program to Demonstrate Single-Line and Multi-Line Comments
+
+#include <stdio.h>
+
+int main()
+
+{
+
+// This is a single-line comment.
+
+printf("Hello, World!\n");
+
+/*
+
+This is a multi-line comment.
+
+It can contain multiple lines.
+
+*/
+
+printf("This program demonstrates comments in C.\n");
+
+return 0;
+
+}
+
+
+Write a C program to demonstrate the order of execution of operators in an expression using operator precedence and associativity.
+
+Program #include <stdio.h>
+
+int main()
+
+{
+
+}
+
+int a = 10 b = 5 c = 2
+
+int result;
+
+result = a + b * c;
+
+printf("Expression: a + b * c\n");
+
+printf("a = %d, b = %d, c = %d\n", a, b, c);
+
+printf("Result = %d\n", result);
+
+return 0;
+
+Output
+
+Expression: a + b*c
+
+a = 10 c = 2 b = 5
+
+Result = 20
+
+Explanation: Multiplication * has higher precedence than addition +, so b * c is evaluated first.
+
+2. Program to Check Whether a Number is Even or Odd
+
+Problem Statement
+
+Write a C program to accept a number from the user and check whether the given number is even or odd.
+
+Program
+
+#include <stdio.h>
+
+int main()
+
+int num;
+
+printf("Enter a number: ");
+
+scanf("%d", &num);
+
+if (num % 2 == 0)
+
+{ printf("%d is an Even number.\n", num);
+
+else
+
+{ printf("%d is an Odd number.\n", num); }
+
+}
+
+return 0;
+
+Output
+
+Enter a number: 25
+
+25 is an Odd number.
+
+
+3. Program to Determine Whether a Number is Positive, Negative, or Zero
+
+Problem Statement
+
+Write a C program to accept a number from the user and determine whether it is positive, negative, or zero.
+
+Program #include <stdio.h>
+
+int main()
+
+{
+
+int num;
+
+printf("Enter a number: ");
+
+scanf("%d", &num);
+
+if (num > 0)
+
+{ printf("%d is a Positive number.\n", num);
+
+3/8
+
+} else if (num < 0)
+
+{ printf("%d is a Negative number.\n", num);
+
+else
+
+{ printf("The number is Zero.\n");
+
+)
+
+return 0;
+
+Output
+
+Enter a number: -15 -15 is a Negative number..
+
+4. Menu-Driven Calculator Using Switch-Case
+
+Problem Statement
+
+Write a C program using the switch-case statement to create a menu-driven calculator that repeatedly performs arithmetic operations until the user chooses to exit.
+
+Program
+
+#include <stdio.h>
+
+int main()
+
+int choice; float num1, num2, result;
+
+do
+
+printf("\n MENU-DRIVEN CALCULATOR \n"); printf("1. Addition\n"); printf("2. Subtraction\n"); printf("3. Multiplication\n"); printf("4. Division\n"); printf("5. Exit\n");
+
+printf("Enter your choice: "); scanf("%d", &choice);
+
+if (choice >= 1 && choice <= 4)
+
+{ printf("Enter two numbers: "); } scanf("%f%f", &num1, &num2);
+
+switch (choice)
+
+{
+
+case 1:
+
+4/8
+
+result num1 + num2; printf("Result = %.2f\n", result); break; }
+
+case 2:
+
+result num1-num2; printf("Result = %.2f\n", result); break;
+
+case 3:
+
+1 result num1* num2; printf("Result = %.2f\n", result); break; }
+
+case 4:
+
+if (num2 != 0)
+
+{ result = num1/num2; printf("Result = %.2f\n", result); } else { printf("Division by zero is not possible.\n"); } break;
+
+}
+
+case 5: printf("Exiting the calculator...\n"); { break;
+
+}
+
+default:
+
+1 printf("Invalid choice. Please try again.\n"); }
+
+}
+
+return 0;
+
+Output
+
+1. Addition
+
+MENU-DRIVEN CALCULATOR
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+5. Exit
+
+Enter your choice: 1
+
+Enter two numbers: 20 10
+
+Result = 30.00
+
+MENU-DRIVEN CALCULATOR.....
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+5. Exit
+
+Enter your choice: 3
+
+Enter two numbers: 54
+
+Result 20.00
+
+MENU-DRIVEN CALCULATOR
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+5. Exit
+
+Enter your choice: 5
+
+Exiting the calculator...
+
+Switch case calculator program:
+
+#include <stdio.h>
+
+int main()
+
+int choice;
+
+float a, b;
+
+printf("1. Addition\n");
+
+printf("2. Subtraction\n");
+
+printf("3. Multiplication\n");
+
+printf("4. Division\n");
+
+printf("Enter your choice: ");
+
+scanf("%d", &choice);
+
+printf("Enter two numbers: ");
+
+scanf("%f %f", &a, &b);
+
+switch(choice)
+
+(
+
+case 1:
+
+printf("Result = %.2f", a + b); break;
+
+case 2: printf("Result = %.2f", a - b); break;
+
+case 3: printf("Result = %.2f", a * b); break;
+
+case 4: printf("Result = %.2f", a/b); break;
+
+default:
+
+}
+printf("Invalid choice");
+
+5/8
+
+return 0;
+
+}
+
+
+5. Multiplication Table Using While, Do-While, and For Loops
+
+Problem Statement
+
+Write a C program to generate the multiplication table of any number using while loop, do-while loop, and for loop.
+
+Program
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int num; int i;
+
+printf("Enter a number: ");
+
+scanf("%d", &num);
+
+printf("\nMultiplication Table Using While Loop:\n");
+
+while (i <= 10)
+
+{ } printf("%d x %d = %d\n", num, i, num i); ++;
+
+printf("\nMultiplication Table Using Do-While Loop:\n");
+
+do
+
+}
+printf("%d x %d = %d\n", num, i, num * i);
+
+4+1 } while (i <= 10);
+
+}
+printf("\nMultiplication Table Using For Loop:\n");
+
+for ( i = 1; i <= 10 ;i++) { printf("%d x %d %d\n", num, i, num i);
+
+}
+
+return 0;
+
+Output Enter a number: 5
+
+Multiplication Table Using While Loop:
+
+5 * 1 = 5
+
+5 * 2 = 10
+
+5 * 3 = 15
+
+5 * 4 = 20
+
+i = 1
+
+i = 1
+
+5 * 5 = 25
+
+5 * 6 = 30
+
+5 * 8 = 40 5 * 7 = 35
+
+5 * 9 = 45
+
+5 * 10 = 50
+
+Multiplication Table Using Do-While Loop:
+
+
+5 * 1 = 5
+
+5 * 2 = 10
+
+5 * 3 = 15
+
+5 * 4 = 20
+
+5 * 5 = 25
+
+5 * 8 = 40
+
+5 * 6 = 30
+
+5 * 7 = 35
+
+5 * 8 = 40
+
+5 * 9 = 45
+
+5 * 10 = 50
+
+Multiplication Table Using For Loop:
+
+5 * 1 = 5
+
+5 * 2 = 10
+
+5 * 3 = 15
+
+5 * 4 = 20
+
+5 * 5 = 25
+
+5 * 6 = 30
+
+5 * 7 = 35
+
+5 * 9 = 45
+
+5 * 10 = 50
